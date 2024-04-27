@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useNavigate } from "react-router-dom";
 import homeImage from "../assets/Designer.png";
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className="bg-orange-100 ">
       <section className=" max-w-7xl mx-auto px-4  lg:px-8  rounded">
@@ -20,7 +22,10 @@ export default function Home() {
             </p>
             {/* Button Section */}
             <div className="mt-5 flex justify-center lg:justify-start">
-              <button className="w-full md:w-1/2 flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-600">
+              <button
+                onClick={() => navigate("/jobs")}
+                className="w-full md:w-1/2 flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-600"
+              >
                 Get started
               </button>
             </div>

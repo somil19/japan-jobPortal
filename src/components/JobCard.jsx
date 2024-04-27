@@ -13,7 +13,7 @@ export default function JobCard({ job }) {
         job.salary.currency) ||
     "Not specified";
   return (
-    <div className="md:w-3/4 w-full rounded-lg  flex flex-col justify-center items-center bg-white  hover:shadow-lg">
+    <div className="md:w-3/4 w-full rounded-lg  flex flex-col justify-center items-center bg-white  hover:shadow-lg border-b-2 border-gray-200">
       <div className="bg-[#4F46E5] rounded-t-lg  h-16 w-full flex justify-center items-center text-lg font-bold text-white uppercase">
         {job.company_name}
       </div>

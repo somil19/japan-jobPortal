@@ -8,6 +8,7 @@ const apiHost = import.meta.env.VITE_SOME_HOST;
 export default function Jobs() {
   const [jobListings, setJobListings] = useState([
     {
+      // Demo job data
       key: Date.now(),
       title: "Frontend Developer",
       company_name: "Microsoft",
